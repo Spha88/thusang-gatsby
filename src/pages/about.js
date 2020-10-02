@@ -3,8 +3,8 @@ import React from 'react';
 import Zoom from 'react-reveal/Zoom';
 
 import Layout from '../components/UI/Layout';
-import Decal from '../components/UI/Decal/Decal';
-import Container from '../components/UI/Container/Container';
+import Decal from '../components/UI/Banner/Banner';
+import Container from '../components/UI/Contain/Contain';
 
 const About = () => {
     return (

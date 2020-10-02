@@ -1,5 +1,5 @@
 import React from 'react'
-import Container from '../UI/Container/Container';
+import Container from '../UI/Contain/Contain';
 import classes from './ContactUs.module.scss';
 import ContactForm from './ContactForm/ContactForm';
 

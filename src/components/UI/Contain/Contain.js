@@ -1,5 +1,5 @@
-import React from 'react'
-import classes from './Container.module.scss'
+import React from 'react';
+import classes from './Contain.module.scss';
 
 const Container = ({ children }) => {
     return (

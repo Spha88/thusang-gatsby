@@ -1,9 +1,9 @@
 import React from 'react';
 import Zoom from 'react-reveal/Zoom';
-import classes from './Decal.module.scss';
+import classes from './Banner.module.scss';
 import decal_bg from '../../../assets/images/decal_bg.png';
 
-const Decal = ({ heading, color }) => {
+const Banner = ({ heading, color }) => {
     return (
         <div className={classes.Decal} style={{ backgroundImage: `url(${decal_bg})`, color: color }}>
             <div className={classes.DecalInner}>
@@ -13,4 +13,4 @@ const Decal = ({ heading, color }) => {
     )
 }
 
-export default Decal 
+export default Banner 

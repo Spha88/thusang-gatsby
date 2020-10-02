@@ -1,6 +1,6 @@
 import React from 'react';
 import Zoom from 'react-reveal/Zoom';
-import Container from '../UI/Container/Container';
+import Container from '../UI/Contain/Contain';
 import classes from './Mission.module.scss';
 import mission_img from '../../assets/images/mission_img.png';
 

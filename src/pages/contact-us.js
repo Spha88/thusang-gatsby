@@ -2,9 +2,9 @@ import React from 'react';
 
 import Layout from '../components/UI/Layout';
 import classes from './ContactUs.module.scss';
-import Decal from '../Components/UI/Decal/Decal';
+import Decal from '../components/UI/Banner/Banner';
 import ContactForm from '../components/ContactUs/ContactForm/ContactForm';
-import Container from '../Components/UI/Container/Container';
+import Container from '../components/UI/Contain/Contain';
 
 const ContactUs = () => {
     return (

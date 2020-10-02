@@ -2,7 +2,7 @@ import React from 'react';
 import Fade from 'react-reveal/Fade';
 import Zoom from 'react-reveal/Zoom';
 import classes from './About.module.scss';
-import Container from '../UI/Container/Container';
+import Container from '../UI/Contain/Contain';
 import CssImageSlide from '../UI/CssImageSlide/CssImageSlide';
 
 const About = () => {
