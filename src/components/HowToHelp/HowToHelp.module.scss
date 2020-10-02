@@ -1,0 +1,40 @@
+@import '../../assets/styles/mixins.scss';
+
+.HowToHelp {
+    .Heading {
+        font-size: 36px;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    .Content {
+        display: flex;
+        justify-content: space-between;
+        @include media($bp-tablet) {
+            display: block;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        .Paragraph {
+            max-width: 500px;
+            width: 100%;
+            text-align: left;
+            padding: 1rem;
+            h2 {
+                font-weight: bold;
+                font-size: 18px;
+                text-align: center;
+                span {
+                    color: #A30000
+                }
+            }
+            p {
+                font-size: 18px;
+                line-height: 180%;
+            }
+            @include media($bp-tablet) {
+                padding: 0;
+            }
+        }
+    }
+}

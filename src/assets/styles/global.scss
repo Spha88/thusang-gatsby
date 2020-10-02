@@ -1,0 +1,52 @@
+@import './mixins.scss';
+* {
+    box-sizing: border-box;
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+}
+
+body {
+    margin: 0;
+    color: $theme-text-color;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    width: 100vw;
+    overflow-x: hidden;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Scroll bars  */
+  /* width */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    border: 1px solid #fff;
+    cursor: pointer;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: $theme-red;
+    border-radius: 20px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: $theme-red;
+    cursor: pointer;
+  }

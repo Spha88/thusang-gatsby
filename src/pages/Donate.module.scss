@@ -1,0 +1,74 @@
+@import '../assets/styles/mixins.scss';
+
+.Donate {
+    .Content {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .BankingDetails {
+            h2 {
+                font-size: 36px;
+                font-weight: bold;
+                span {
+                    color: #A30000;
+                }
+            }
+            ul {
+                font-size: 18px;
+                line-height: 180%;
+                span {
+                    font-weight: bold;
+                }
+                span.Numbers {
+                    font-weight: normal;
+                    font-family: Arial, Helvetica, sans-serif;
+                }
+            }
+            h3 {
+                text-align: center;
+                font-weight: normal;
+                font-size: 36px;
+                font-style: italic;
+                font-family: 'Satisfy', cursive;
+            }
+            
+        }
+        @include media($bp-laptop) {
+            padding: 0;
+            .BankingDetails{
+                width: 60%;
+            }
+            .Image {
+                width: 40%;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+        @include media($bp-tablet) {
+            display: block;
+            max-width: 500px;
+            margin: 0 auto;
+            .BankingDetails {
+                width: 100%;
+                padding-bottom: 1.5rem;
+                h2 {
+                    margin-top: 0;
+                }
+            }
+            .Image {
+                width: 100%;
+            }
+        }
+    }
+    .ContactForm {
+        padding: 3rem 0;
+        h2{
+            text-align: center;
+            margin-bottom: 0;
+        }
+    }
+
+}

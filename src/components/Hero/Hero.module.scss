@@ -1,0 +1,98 @@
+@import '../../assets/styles/mixins.scss';
+
+.Hero {
+    height: 80vh;
+    width: 100vw;
+    overflow: hidden;
+    background-position: center center;
+    background-color: $theme-black;
+    background-size: cover;
+    background-repeat: no-repeat !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .Scroll {
+        margin-top: 3rem;
+        padding-bottom: 3rem;
+        .ScrollBtn {
+            cursor: pointer;
+            position: relative;
+            background-color: $theme-red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 60px;
+            width: 40px;
+            border-radius: 17px;
+            img {
+                position: relative;
+            }
+            &:after {
+                position: absolute;
+                content: '';
+                top: -15px;
+                bottom: -15px;
+                left: -15px;
+                right: -15px;
+                opacity: 0;
+                border-radius: 25px;
+                border: 1px solid $theme-red;
+                transition: all 500ms ease-in;
+            }
+            &:hover {
+                &:after {
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    opacity: .6;
+                    border-width: 10px;
+                }
+                img {
+                    animation: arrow 500ms ease-in;
+                }
+            }
+        }
+    }
+    .HeroContent {
+        max-width: 1024px;
+        padding: 4rem;
+        color: #fff;
+        text-align: left;
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 2rem;
+        }
+    }
+    @include media($bp-tablet) {
+        height: 100vh;
+        max-height: 700px;
+    }
+    @include media($bp-mobile) {
+        animation: bg_image 60s linear 2s infinite reverse;
+        .HeroContent {
+            h1 {
+                font-size: 2rem;
+            }
+            button {
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+
+@keyframes bg_image {
+    0% {background-position: center center;}
+    25% { background-position: right center;}
+    50% {background-position: center center;}
+    75% {background-position: left center;}
+    100% { background-position: center center;}
+}
+
+@keyframes arrow {
+    0% { transform: translateY(0);}
+    50% { transform: translateY(60%);}
+    100% { transform: translateY(0);}
+}

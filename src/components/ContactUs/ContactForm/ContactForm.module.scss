@@ -1,0 +1,92 @@
+@import '../../../assets/styles/mixins.scss';
+.Form {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    color: $theme-text-color;
+    h3 {
+        margin: 0 0 5px 0;
+        &.ShippingHeading {
+            padding-top: 20px;
+        }
+    }
+    .FormGroup {
+        margin: 20px auto 0;
+        label {
+            display: block;
+            width: 100%;
+            margin: 0 0 6px 5px;
+            font-size: 0.9em;
+            padding-left: 3rem;
+            display: none;
+            &.MsgLabel {
+                display: block;
+            }
+        }
+        .InputContainer {
+            position: relative;
+            border-radius: 10px;
+            border: 1px solid $theme-border-color;
+            &.InputContainerError {
+                border: 1px solid $theme-red;
+            }
+            i {
+                position: absolute;
+                top: 50%;
+                left: 15px;
+                transform: translateY(-50%);
+                font-size: 1.4em;
+                @include media($bp-mobile) {
+                    left: 8px;
+                    font-size: 1.3em;
+                }
+                &.inTextArea{
+                    top: 10%;
+                    transform: translate(0%);
+                }
+            }
+            input:not([type=checkbox]), textarea {
+                width: 100%;
+                padding: 16px 18px 16px 50px;
+                border-radius: 10px;
+                border: none;
+                outline: none;
+                font-size: 14px;
+                font-weight: 500;
+                font-family: inherit;
+                resize: none;
+                @include media($bp-mobile) {
+                    padding-left: 40px;
+                }
+            }
+            textarea {
+                line-height: 170%;
+            }
+        }
+        .Error {
+            height: 20px;
+            display: flex;
+            padding-right: 10px;
+            justify-content: flex-end;
+            align-items: flex-end;
+            font-size: .9em;
+            color: $theme-red;
+        }
+        
+    }
+    
+    footer {
+        text-align: left;
+        padding-left: 3rem;
+        button {
+            padding: 10px 30px;
+            letter-spacing: 1px;
+            font-size: 1.05em;
+            border-radius: 5px;
+            border: none;
+            color: $theme-white-color;
+            background: $theme-red;
+            cursor: pointer;
+        }
+    }
+}

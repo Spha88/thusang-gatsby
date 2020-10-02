@@ -1,0 +1,67 @@
+@import '../../assets/styles/mixins.scss';
+
+.Help {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include media($bp-tablet) {
+        margin-top: 0;
+        display: block;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    .Content {
+        padding-right: 5rem;
+        text-align: left;
+        h2 {
+            font-size: 36px;
+            @include media($bp-mobile) {
+                margin: 0;
+            }
+        }
+        p {
+            font-size: 27px;
+            line-height: 140%;
+            span {
+                font-weight: bold;
+            }
+            @include media($bp-mobile) {
+                font-size: 22px;
+            }
+        }
+        a {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background: #A30000;
+            color: #fff;
+            border-radius: 23px;
+            font-size: 24px;
+            font-weight: 500;
+            @include media($bp-mobile) {
+                font-size: 18px;
+            }
+        }
+        @include media($bp-laptop) {
+            width: 50%;
+            padding-right: 2rem;
+        }
+        @include media($bp-tablet) {
+            width: 100%;
+            padding: 0;
+            padding-bottom: 2rem;
+            text-align: center;
+        }
+    }
+    .Image {
+        width: 550px;
+        @include media($bp-laptop) {
+            width: 50%;
+            img {
+                max-width: 100%;
+            }
+        }
+        @include media($bp-tablet) {
+            width: 100%;
+        }
+    }
+}

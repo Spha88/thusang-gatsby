@@ -1,0 +1,55 @@
+@import '../../assets/styles/mixins.scss';
+.Mission {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include media($bp-tablet) {
+        display: flex;
+        flex-flow: column-reverse;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    .Content {
+        padding-left: 6rem;
+        text-align: left;
+        h2 {
+            span { color: #D01132}
+            font-size: 36px;
+            font-weight: 700;
+            margin-bottom: 0;
+        }
+        p {
+            line-height: 177%;
+            font-size: 18px;
+            font-weight: 400;
+            span {
+                font-weight: bold;
+            }
+        }
+        @include media($bp-laptop) {
+            width: 50%;
+            padding: 0 2rem;
+        }
+        @include media($bp-tablet) {
+            width: 100%;
+            padding: 0;
+            padding-bottom: 1rem;
+            h2 {
+                margin: 0;
+            }
+        }
+    }
+
+    .Image {
+        width: 550px;
+        @include media($bp-laptop) {
+            width: 50%;
+            img {
+                width: 100%; 
+            }
+        }
+        @include media($bp-tablet) {
+            width: 100%;
+        }
+    }
+}

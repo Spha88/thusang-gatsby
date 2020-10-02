@@ -1,0 +1,39 @@
+/* Variables */
+$theme-red: #A30000;
+$theme-black: #323232;
+
+$theme-text-color: rgb(97, 97, 97);
+$theme-border-color: rgb(187, 187, 187);
+$theme-highlight-color: rgb(255, 115, 0);
+$theme-white-color: rgb(230, 230, 230);
+
+$bp-laptop: 1024px;
+$bp-tablet: 768px;
+$bp-mobile: 425px;
+
+/* @import '../../../assets/styles/variables.scss'; */
+$laptop: 1024px;
+$tablet: 768px;
+$mobile: 425px;
+
+/* Media Query */
+@mixin media($bp) {
+    transition: all 500ms ease-in-out;
+    @if $bp == 1024px {
+        @media (max-width: 1024px) {
+            @content;
+        }
+    } @else if $bp == 768px {
+        @media (max-width: 768px) {
+            @content;
+        }
+    } @else if $bp == 425px {
+        @media (max-width: 425px) {
+            @content;
+        }
+    }
+}
+/* Transition */
+@mixin transition {
+    transition: all 500ms ease-in-out;
+}

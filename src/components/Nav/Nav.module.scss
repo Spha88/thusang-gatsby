@@ -1,0 +1,96 @@
+@import '../../assets/styles/mixins.scss';
+
+.NavContainer {
+    width: 100vw;
+    .Nav {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 1rem;
+        @include media($bp-tablet) {
+            padding: 1rem 3rem;
+            align-items: center;
+        }
+        @include media($bp-mobile) {
+            padding: 1rem 1.5rem;
+        }
+        .Logo {
+            text-align: left;
+            h2, h5 {
+                margin: 0;
+            }
+            h2 {
+                margin-bottom: 5px;
+            }
+        }
+        .NavIconContainer {
+            display: none;
+            cursor: pointer;
+            @include media($bp-tablet) {
+                display: block;
+            }
+        }
+        .NavItems {
+            list-style-type: none;
+            margin: 0;
+            @include media($bp-tablet) {
+                display: none;
+            }
+            li {
+                display: inline-block;
+                font-weight: 600;
+                a {
+                    display: block;
+                    margin: 0 1rem;
+                    text-decoration: none;
+                    color: inherit;
+    
+                }
+                .Active {
+                    color: #D01132;
+                }
+            }
+        }
+
+        .NavItemsMobile {
+            display: none;
+            background-color: rgba(0, 0, 0, 0.938);
+            color: #fff;
+            position: fixed;
+            top: 0;
+            min-width: 400px;
+            height: 100vh;
+            padding: 1rem;
+            padding-left: 3rem;
+            right: -100%;
+            z-index: 100;
+            li {
+                padding: 1rem 0;
+                font-size: 20px;
+                .Active {
+                    color: #D01132;
+                }
+            }
+            .NavLogo {
+                h2, h5 {
+                    margin: 10px;
+                }
+            }
+            @include media($bp-tablet) {
+                display: block;
+            }
+            @include media($bp-mobile) {
+                min-width: 100vw;
+                width: 100vw;
+            }
+            &.open {
+                right: 0;
+            }
+        }
+        
+    }
+}
+

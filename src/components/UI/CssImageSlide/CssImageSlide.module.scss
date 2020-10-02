@@ -1,0 +1,38 @@
+.CssImageSlide {
+    position: relative;
+    img {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    img:first-child {
+        position: relative;
+        left: 0;
+        right: 0;
+        top: 0;
+    }
+    img:nth-child(1) {
+        opacity: 1; 
+    }
+    img:nth-child(2) {
+        opacity: 0;
+        animation: slide 15s linear 5s infinite; 
+    }
+    img:nth-child(3) {
+        opacity: 0;
+        animation: slide 15s linear 10s infinite; 
+    }
+    img:nth-child(4) {
+        opacity: 0;
+        animation: slide 15s linear 15s infinite; 
+    }
+
+}
+
+@keyframes slide {
+    0% {opacity: 0;}
+    45% { opacity: 0}
+    50% { opacity: 1;}
+    95% { opacity: 1; }
+    100% { opacity: 0;}
+}

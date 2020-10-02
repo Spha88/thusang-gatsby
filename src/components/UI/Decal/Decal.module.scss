@@ -1,0 +1,47 @@
+@import '../../../assets/styles/mixins.scss';
+
+.Decal {
+    height: 320px;
+    color: #fff;
+    width: 100%;
+    background-position: right;
+    background-color: $theme-black;
+    background-size: cover;
+    background-repeat: no-repeat !important;
+    .DecalInner {
+        max-width: 1200px;
+        height: 100%;
+        margin: 0 auto;
+        padding: 0 1rem;
+        display: flex;
+        align-items: center;
+        padding: 3rem;
+        h2 {
+            width: 100%;
+            text-align: left;
+            font-size: 48px;
+        }
+    }
+    @include media($bp-tablet) {
+        height: 200px;
+        .DecalInner {
+            h2 {
+                @include transition;
+                font-size: 35px;
+            }
+        }
+    } 
+    @include media($bp-mobile) {
+        height: 100px;
+        .DecalInner{
+            h2 {
+                font-size: 25px;
+            }
+        }
+    }  
+    @include media($bp-mobile) {
+        height: 200px;
+        background-position: top 0 right -200px;
+    }
+    
+}
