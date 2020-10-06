@@ -11,14 +11,14 @@ const Footer = () => {
             <div className={classes.FooterInner}>
                 <div className={classes.Content}>
                     <div className={classes.Logo}>
-                        <h2><Link to="/">Thusang Social Center</Link></h2>
-                        <h5><Link to="/">In the service of caring</Link></h5>
+                        <h2><Link to={`/`}>Thusang Social Center</Link></h2>
+                        <h5><Link to={`/`}>In the service of caring</Link></h5>
                     </div>
                     <ul className={classes.NavItems}>
-                        <li><Link to="/" activeClassName={classes.Active}>Home</Link></li>
-                        <li><Link to="/about" activeClassName={classes.Active}>About Us</Link></li>
-                        <li><Link to="/donate" activeClassName={classes.Active}>Donate</Link></li>
-                        <li><Link to="/contact-us" activeClassName={classes.Active}>Contact</Link></li>
+                        <li><Link to={`/`} activeClassName={classes.Active}>Home</Link></li>
+                        <li><Link to={`/about`} activeClassName={classes.Active}>About Us</Link></li>
+                        <li><Link to={`/donate`} activeClassName={classes.Active}>Donate</Link></li>
+                        <li><Link to={`/contact-us`} activeClassName={classes.Active}>Contact</Link></li>
                     </ul>
                 </div>
                 <div className={classes.CopyRight}>
