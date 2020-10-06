@@ -1,7 +1,7 @@
 import React from 'react';
 import Zoom from 'react-reveal/Zoom';
 import classes from './Banner.module.scss';
-import decal_bg from '../../../assets/images/decal_bg.png';
+import decal_bg from '../../../assets/images/decal_bg.jpg';
 
 const Banner = ({ heading, color }) => {
     return (

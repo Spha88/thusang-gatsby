@@ -1,9 +1,9 @@
 import React from 'react';
 import classes from './CssImageSlide.module.scss';
-import slide1 from '../../../assets/images/slide/slide1.png';
-import slide2 from '../../../assets/images/slide/slide2.png';
-import slide3 from '../../../assets/images/slide/slide3.png';
-import slide4 from '../../../assets/images/slide/slide4.png';
+import slide1 from '../../../assets/images/slide/slide1.jpg';
+import slide2 from '../../../assets/images/slide/slide2.jpg';
+import slide3 from '../../../assets/images/slide/slide3.jpg';
+import slide4 from '../../../assets/images/slide/slide4.jpg';
 
 
 const CssImageSlide = () => {

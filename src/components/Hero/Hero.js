@@ -1,7 +1,7 @@
 import React from 'react';
 import classes from './Hero.module.scss';
 import Zoom from 'react-reveal/Zoom';
-import background from '../../assets/images/background.png';
+import background from '../../assets/images/background.jpg';
 import LinkButton from '../UI/LinkButton/LinkButton';
 import arrow_down from '../../assets/icons/expand_more.svg';
 import { Link } from 'react-scroll';

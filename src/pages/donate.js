@@ -6,7 +6,7 @@ import classes from './Donate.module.scss';
 import Layout from '../components/UI/Layout';
 import Decal from '../components/UI/Banner/Banner';
 import Container from '../components/UI/Contain/Contain';
-import thank_you_img from '../assets/images/thank_you.png';
+import thank_you_img from '../assets/images/thank_you.jpg';
 
 const Donate = () => {
     return (

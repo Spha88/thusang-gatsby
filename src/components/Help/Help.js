@@ -2,7 +2,7 @@ import React from 'react';
 import Zoom from 'react-reveal/Zoom';
 import Container from '../UI/Contain/Contain';
 import classes from './Help.module.scss';
-import helping_img from '../../assets/images/helping_hand.png';
+import helping_img from '../../assets/images/helping_hand.jpg';
 import LinkButton from '../UI/LinkButton/LinkButton';
 
 const Help = () => {
